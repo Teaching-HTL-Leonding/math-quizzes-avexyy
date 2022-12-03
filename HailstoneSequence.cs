@@ -5,8 +5,13 @@ do
     System.Console.Write("Enter a starting value ( > 1): ");
     startingValue = int.Parse(Console.ReadLine()!);
 
-    System.Console.Write("Enter a starting value ( > 1): ");
+    System.Console.Write("Enter a second starting value ( > 1): ");
     startingValue2 = int.Parse(Console.ReadLine()!);
+
+    if(startingValue <= 1 || startingValue2 <= 1)
+    {
+        System.Console.WriteLine("Invalid Input!");
+    }
 
 } while (startingValue <= 1 || startingValue2 <= 1);
 
